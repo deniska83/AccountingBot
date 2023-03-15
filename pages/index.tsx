@@ -19,7 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [messageState, setMessageState] = useState<{ messages: Message[], pending?: string, history: [string, string][] }>({
     messages: [{
-      "message": "Hi, I'm a  AI Assistant trained on the Next13 Beta Docs. How can I help you?",
+      "message": "Hi, I'm an AI Accountant Bot Trained on Public Disclosures . How can I help you?",
       "type": "apiMessage"
     }],
     history: []
@@ -220,13 +220,13 @@ export default function Home() {
             </form>
           </div>
           <div className = {styles.footer}>
-            {/* <p> Built on <a href="https://github.com/zahidkhawaja/langchain-chat-nextjs" target="_blank" rel="noreferrer">
+            <p> Built on <a href="https://github.com/zahidkhawaja/langchain-chat-nextjs" target="_blank" rel="noreferrer">
                Zahids Langchain Chatbot
               </a> <a href="https://github.com/progremir/navalmanac" target="_blank" rel="noreferrer">
               Emirs Navalmanac
               </a> Customized by <a href="https://starmorph.com" target="_blank" rel="noreferrer">
                Starmorph
-              </a> </p> */}
+              </a> </p>
           </div>
         </div>
       </main>
