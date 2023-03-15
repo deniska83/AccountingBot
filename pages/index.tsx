@@ -118,36 +118,36 @@ export default function Home() {
     <>
       <Head>
         {/* <!-- Primary Meta Tags --> */}
-        <title>NextJs13 Unofficial Langchain Chatbot</title>
-        <meta name="title" content="UnOfficial Nextjs 13 Doc Bot" />
-        <meta name="description" content="AI chatbot built using Langchain Nextjs and OpenAI" />
+        <title>Accounting Chatbot</title>
+        <meta name="title" content="Accounting AI Bot" />
+        <meta name="description" content="Accounting Bot" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="UnOfficial Nextjs 13 Doc Bot" />
-        <meta property="og:description" content="AI chatbot built using Langchain Nextjs and OpenAI" />
+        <meta property="og:title" content="Accounting AI Bot" />
+        <meta property="og:description" content="Accounting Bot" />
         <meta property="og:image" content="https://starmorph.com/starmorph-wide.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="UnOfficial Nextjs 13 Doc Bot" />
-        <meta property="twitter:description" content="AI chatbot built using Langchain Nextjs and OpenAI" />
+        <meta property="twitter:title" content="Accounting AI Bot" />
+        <meta property="twitter:description" content="Accounting Bot" />
         <meta property="twitter:image" content="https://starmorph.com/starmorph-wide.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.topnav}>
         <div>
-          <Link href="/"><h1 className={styles.navlogo}>Starmorph Langchain Chatbot</h1></Link>
+          <Link href="/"><h1 className={styles.navlogo}>Accounting Bot</h1></Link>
         </div>
         <div className = {styles.navlinks}>
-          <a
+          {/* <a
             href="https://starmorph.com"
             target="_blank"
             rel="noreferrer"
           >
             Starmorph
-          </a>
+          </a> */}
         </div>
       </div>
       <main className={styles.main}>
@@ -220,13 +220,13 @@ export default function Home() {
             </form>
           </div>
           <div className = {styles.footer}>
-            <p> Built on <a href="https://github.com/zahidkhawaja/langchain-chat-nextjs" target="_blank" rel="noreferrer">
+            {/* <p> Built on <a href="https://github.com/zahidkhawaja/langchain-chat-nextjs" target="_blank" rel="noreferrer">
                Zahids Langchain Chatbot
               </a> <a href="https://github.com/progremir/navalmanac" target="_blank" rel="noreferrer">
               Emirs Navalmanac
               </a> Customized by <a href="https://starmorph.com" target="_blank" rel="noreferrer">
                Starmorph
-              </a> </p>
+              </a> </p> */}
           </div>
         </div>
       </main>
