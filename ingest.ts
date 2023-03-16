@@ -3,7 +3,7 @@ import { OpenAIEmbeddings } from "langchain/embeddings";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { TextLoader } from "langchain/document_loaders";
 
-const FILENAME = "Disclosures.md";
+const FILENAME = "10k.md";
 
 export const run = async () => {
   const loader = new TextLoader(FILENAME);
