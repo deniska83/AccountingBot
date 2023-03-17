@@ -1,12 +1,31 @@
 import { HNSWLib } from "langchain/vectorstores";
 import { OpenAIEmbeddings } from "langchain/embeddings";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
-import { TextLoader } from "langchain/document_loaders";
+import {
+  DirectoryLoader,
+  JSONLoader,
+  JSONLinesLoader,
+  TextLoader,
+  PDFLoader,
+  CSVLoader,
+} from "langchain/document_loaders";
 
 const FILENAME = "10k.md";
 
+
 export const run = async () => {
-  const loader = new TextLoader(FILENAME);
+
+  const loader = new DirectoryLoader(
+    "documents/",
+    {
+      ".pdf": (path) => new PDFLoader(path),
+      ".jsonl": (path) => new JSONLinesLoader(path, "/html"),
+      ".txt": (path) => new TextLoader(path),
+      ".csv": (path) => new CSVLoader(path, "text"),
+    }
+  );
+
+
   const rawDocs = await loader.load();
   console.log("Loader created.");
   /* Split the text into chunks */
