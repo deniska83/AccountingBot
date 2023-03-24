@@ -220,13 +220,6 @@ export default function Home() {
             </form>
           </div>
           <div className = {styles.footer}>
-            <p> Built on <a href="https://github.com/zahidkhawaja/langchain-chat-nextjs" target="_blank" rel="noreferrer">
-               Zahids Langchain Chatbot
-              </a> <a href="https://github.com/progremir/navalmanac" target="_blank" rel="noreferrer">
-              Emirs Navalmanac
-              </a> Customized by <a href="https://starmorph.com" target="_blank" rel="noreferrer">
-               Starmorph
-              </a> </p>
           </div>
         </div>
       </main>
