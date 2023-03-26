@@ -19,7 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [messageState, setMessageState] = useState<{ messages: Message[], pending?: string, history: [string, string][] }>({
     messages: [{
-      "message": "Hi, I'm an AI Accountant Bot Trained on Public Disclosures . How can I help you?",
+      "message": "Hi, I'm a Public Disclosure Accounting Bot. Ask me about your sustainable infrastucture project",
       "type": "apiMessage"
     }],
     history: []
@@ -118,19 +118,19 @@ export default function Home() {
     <>
       <Head>
         {/* <!-- Primary Meta Tags --> */}
-        <title>Accounting Chatbot</title>
-        <meta name="title" content="Accounting AI Bot" />
+        <title>VoltBoost Accounting AI</title>
+        <meta name="title" content="VoltBoost Accounting AI" />
         <meta name="description" content="Accounting Bot" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Accounting AI Bot" />
+        <meta property="og:title" content="VoltBoost Accounting AI" />
         <meta property="og:description" content="Accounting Bot" />
         <meta property="og:image" content="https://starmorph.com/starmorph-wide.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="Accounting AI Bot" />
+        <meta property="twitter:title" content="VoltBoost Accounting AI" />
         <meta property="twitter:description" content="Accounting Bot" />
         <meta property="twitter:image" content="https://starmorph.com/starmorph-wide.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -138,7 +138,7 @@ export default function Home() {
       </Head>
       <div className={styles.topnav}>
         <div>
-          <Link href="/"><h1 className={styles.navlogo}>Accounting Bot</h1></Link>
+          <Link href="/"><h1 className="text-2xl font-bold text-yellow-600">VoltBoost </h1></Link>
         </div>
         <div className = {styles.navlinks}>
           {/* <a

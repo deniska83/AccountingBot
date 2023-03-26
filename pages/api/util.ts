@@ -50,7 +50,7 @@ export class OpenAIChatLLMChain extends LLMChain implements LLMChainInput {
       },
       {
         role: "assistant",
-        content: "Hi, I'm a Public Disclosure Accounting Bot. How may I help you?"
+        content: "Hi, I'm a Public Disclosure Accounting Bot. Ask me about your sustainable infrastucture project idea"
       },
       ...prefixMessages];
     const formattedString = await this.prompt.format(values);
