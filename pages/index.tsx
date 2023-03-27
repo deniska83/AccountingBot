@@ -121,18 +121,19 @@ export default function Home() {
         <title>VoltBoost Accounting AI</title>
         <meta name="title" content="VoltBoost Accounting AI" />
         <meta name="description" content="Accounting Bot" />
+        
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="VoltBoost Accounting AI" />
         <meta property="og:description" content="Accounting Bot" />
-        <meta property="og:image" content="https://starmorph.com/starmorph-wide.png" />
+        <meta property="og:image" content="https://i.imgur.com/xE38eQ6.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="VoltBoost Accounting AI" />
         <meta property="twitter:description" content="Accounting Bot" />
-        <meta property="twitter:image" content="https://starmorph.com/starmorph-wide.png" />
+        <meta property="twitter:image" content="https://i.imgur.com/xE38eQ6.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
