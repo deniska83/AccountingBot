@@ -137,7 +137,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.topnav}>
-        <div className="w-1/4">
+        <div className="w-1/2">
           <Image src="/logo.png" alt="voltboost logo" height="64" width="64" className="inline w-10 h-10 mr-3"/>
           <Link href="/"><h1 className="text-3xl font-bold align-middle text-yellow-400 inline-block">VoltBoost </h1></Link>
         </div>
@@ -159,10 +159,10 @@ export default function Home() {
               let className;
 
               if (message.type === "apiMessage") {
-                icon = <Image src="/chatIcon.png" alt="AI" width="30" height="30" className={styles.boticon} priority />;
+                icon = <Image src="/chatIcon.png" alt="AI" width="30" height="30" className="p-1 mr-3 rounded-lg align-baseline h-12 w-12 bg-gray-800 border border-gray-700 rounded-lg" priority />;
                 className = styles.apimessage;
               } else {
-                icon = <Image src="/usericon.png" alt="Me" width="30" height="30" className={styles.usericon} priority />
+                icon = <Image src="/usericon.png" alt="Me" width="30" height="30" className="p-1 mr-3 rounded-lg align-baseline h-12 w-12 bg-gray-800 border border-gray-700 rounded-lg" priority />
 
                 // The latest message sent by the user will be animated while waiting for a response
                 className = loading && index === chatMessages.length - 1
