@@ -19,7 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [messageState, setMessageState] = useState<{ messages: Message[], pending?: string, history: [string, string][] }>({
     messages: [{
-      "message": "Hi, I'm a Public Disclosure Accounting Bot. Ask me about your sustainable infrastucture project",
+      "message": "Hi, I'm a Public Disclosure Accounting Bot. Ask me about your clean tech idea or sustainable infrastructure.",
       "type": "apiMessage"
     }],
     history: []
@@ -137,8 +137,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.topnav}>
-        <div>
-          <Link href="/"><h1 className="text-2xl font-bold text-yellow-600">VoltBoost </h1></Link>
+        <div className="w-1/4">
+          <Image src="/logo.png" alt="voltboost logo" height="64" width="64" className="inline w-10 h-10 mr-3"/>
+          <Link href="/"><h1 className="text-3xl font-bold align-middle text-yellow-400 inline-block">VoltBoost </h1></Link>
         </div>
         <div className = {styles.navlinks}>
           {/* <a
