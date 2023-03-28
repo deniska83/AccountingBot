@@ -152,6 +152,7 @@ export default function Home() {
           </a> */}
         </div>
       </div>
+
       <main className={styles.main}>
         <div className={styles.cloud}>
           <div ref={messageListRef} className={styles.messagelist}>
@@ -221,6 +222,17 @@ export default function Home() {
               </button>
             </form>
           </div>
+                    <div className="flex border-t-2 border-gray-800 items-center gap-x-6 mt-10 py-2.5 px-6 sm:px-3.5 sm:before:flex-1">
+      <p className="text-sm leading-6 text-white">
+        <a href="#" className="text-xs">
+          <strong> Disclaimer: </strong>
+          The AI-generated accounting information presented on VoltBoost.io is for educational and informative purposes only. Jedadiah Luke Chilton, CPA, the firm associated with VoltBoost.io, provides no opinion or advice regarding the accuracy, completeness, or reliability of the information presented. Users are strongly encouraged to seek out additional assurance and professional advice from a qualified provider or jlchiltonCPA.com before making any financial decisions based on the AI-generated accounting information presented on VoltBoost.io. Jedadiah Luke Chilton, CPA, shall not be held liable for any damages resulting from the use of this information, and users are solely responsible for their own decisions and actions taken based on the information provided. By using VoltBoost.io and the AI-generated accounting information presented therein, users acknowledge and agree to the terms of this disclaimer.
+        </a>
+      </p>
+      <div className="flex flex-1 justify-end">
+ 
+      </div>
+    </div>
           <div className = {styles.footer}>
           </div>
         </div>
